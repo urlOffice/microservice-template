@@ -15,7 +15,7 @@ const rabbitConsumer = (queueName: string) => {
       channel.assertQueue(queueName, {
         durable: true
       })
-
+      //extra
       // this will determine how many messages are in each queue instances
       channel.prefetch(1);
 
